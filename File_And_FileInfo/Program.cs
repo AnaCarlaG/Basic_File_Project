@@ -6,10 +6,8 @@ using static System.Console;
 WriteLine("Digite o nome do arquivo");
 var name = ReadLine();
 
-
-
 var path = Path.Combine(Environment.CurrentDirectory, $"{name}.txt");
-Name_Clean(name)
+Name_Clean(name);
 Create_File(path);
 
 WriteLine("To end tap some key ...");
