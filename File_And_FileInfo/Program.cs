@@ -26,7 +26,7 @@ static void Create_File(string path)
     try
     {
         // Criar um arquivo
-        var write = File.CreateText(path);
+      using var write = File.CreateText(path);
 
         write.WriteLine("I'm writing some text");
         write.Flush();
